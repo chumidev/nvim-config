@@ -16,6 +16,7 @@ AlignConsecutiveShortCaseStatements:
   AcrossComments: true
   AlignCaseColons: false
 AlignEscapedNewlines: Left
+IndentPPDirectives: Leave
 ]]
 
 local function with_clang_format(dir, fn)
