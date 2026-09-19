@@ -1,5 +1,6 @@
 local ruff = require("plugins.lsp.ruff")
 local clangd = require("plugins.lsp.clangd")
+local meson = require("plugins.lsp.meson")
 
 return {
   "neovim/nvim-lspconfig",
@@ -12,11 +13,13 @@ return {
     servers = {
       ruff = ruff.server,
       clangd = clangd.server,
+      mesonlsp = meson.server,
     },
 
     setup = {
       ruff = ruff.setup,
       clangd = clangd.setup,
+      mesonlsp = meson.setup,
     },
   },
 }

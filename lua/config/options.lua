@@ -4,7 +4,7 @@
 
 local utils = require("utils.functions")
 
-vim.g.root_spec = { { ".git", ".clangd", "build.zig", "init.lua", "pyproject.toml" }, "lsp", "cwd" }
+vim.g.root_spec = { { ".git", ".clangd", "build.zig", "init.lua", "pyproject.toml", "meson.build" }, "lsp", "cwd" }
 
 if utils.isWindowsOs() then
   vim.o.shell = "powershell.exe"
